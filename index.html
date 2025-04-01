@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog de Psicologia Cognitiva</title>
+    <meta name="description" content="Blog informativo sobre Psicologia Cognitiva, seus conceitos, aplicações e descobertas recentes." />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-indigo-600">PsicoCognição</h1>
+          <button id="menuButton" class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul id="menuItems" class="hidden md:flex space-x-6">
+            <li><a href="#inicio" class="hover:text-indigo-600">Início</a></li>
+            <li><a href="#conceitos" class="hover:text-indigo-600">Conceitos</a></li>
+            <li><a href="#aplicacoes" class="hover:text-indigo-600">Aplicações</a></li>
+            <li><a href="#estudos" class="hover:text-indigo-600">Estudos</a></li>
+            <li><a href="#blog" class="hover:text-indigo-600">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24">
+      <section id="inicio" class="py-12">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-6">Bem-vindo à Psicologia Cognitiva</h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Explore o fascinante mundo do funcionamento mental humano, desde processos básicos
+            até as mais complexas funções cognitivas.
+          </p>
+        </div>
+      </section>
+
+      <section id="conceitos" class="py-12 bg-white rounded-lg shadow-md">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Conceitos Fundamentais</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold mb-4">Atenção</h3>
+              <p class="text-gray-600">
+                Processo cognitivo que permite focar em informações específicas
+                enquanto ignora outras menos relevantes.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold mb-4">Memória</h3>
+              <p class="text-gray-600">
+                Sistema complexo que permite armazenar, manter e recuperar
+                informações ao longo do tempo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aplicacoes" class="py-12">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Aplicações Práticas</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">No Cotidiano</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Técnicas de estudo e aprendizagem</li>
+              <li>Gestão do estresse e ansiedade</li>
+              <li>Desenvolvimento de habilidades sociais</li>
+              <li>Resolução de problemas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="estudos" class="py-12 bg-white rounded-lg shadow-md">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Estudos Recentes</h2>
+          <div class="space-y-6">
+            <article class="border-b pb-6">
+              <h3 class="text-xl font-semibold mb-2">Neuroplasticidade e Aprendizagem</h3>
+              <p class="text-gray-600">
+                Novas descobertas sobre como o cérebro se adapta e reorganiza
+                durante o processo de aprendizagem.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="py-12">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Artigos Recentes</h2>
+          <div class="grid md:grid-cols-2 gap-8" id="blogPosts">
+            <!-- Blog posts will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Sobre</h3>
+            <p class="text-gray-300">
+              Blog dedicado à divulgação científica da Psicologia Cognitiva.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Referências</h3>
+            <ul class="text-gray-300">
+              <li>American Psychological Association</li>
+              <li>Cognitive Psychology Journal</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Contato</h3>
+            <p class="text-gray-300">contato@psicocognicao.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
